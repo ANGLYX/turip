@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vino Seco</title>
+<style>
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #4A0E28;
+}
+/* Encabezado */
+header {
+    background-color: #8ea4eb;
+    color: #fff;
+    text-align: center;
+    padding: 1px 50px;
+    margin-bottom: 30px;
+}
+header p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -50px;
+}
+header h1 {
+    font-size: 3em;
+    margin: 80px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+/* Contenido principal */
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px;
+    background-color: rgb(127, 203, 216);
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 50px;
+    background-color: #4A0E28;
+    color: rgba(255,255,255,1.00);
+    box-shadow: 0 0 20px rgba(217, 221, 2, 0.897);
+    border: 3px solid #C9AA00;
+    box-shadow: 0 0 55px rgba(226, 255, 62, 0.89);
+}
+.container p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+/* Sección de productos */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin-top: 30px;
+}
+.product {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.product:hover {
+    transform: translateY(-5px);
+}
+.product img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.product h3 {
+    font-size: 2em;
+    color: #300;
+    margin-top: 5px;
+    color: #ffffff;
+}
+.product p {
+    color: #ffffff;
+    font-size: 1em;
+}
+.boton {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+    color: rgba(255,255,255,1.00);
+    box-shadow: 0 0 20px rgba(217, 221, 2, 0.897);
+    border: 2px solid #C9AA00;
+    box-shadow: 0 0 15px rgba(226, 255, 62, 0.89);
+}
+.btn:hover {
+    background-color: #45a049; /* Color de fondo al pasar el cursor por encima */
+}
+.boton1 {
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    background-color: #000000;
+    color: rgba(255,255,255,1.00);
+    box-shadow: 0 0 20px rgba(217, 221, 2, 0.897);
+    border: 2px solid #C9AA00;
+    box-shadow: 0 0 35px rgba(226, 255, 62, 0.89);
+}
+.btn:hover {
+    background-color: #45a049; /* Color de fondo al pasar el cursor por encima */
+}
+img {
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+}
+</style>
+	<script>
+		function redirigir(nombrep, precio){
+			window.location = "carrito.php?nombre="+nombrep+"&pre="+precio;
+		}
+	</script>
+</head>
+<body class="todo">
+<div class="container"> <a href="trab.php" class="boton1" onclick="redirigir()">Regresal al menu</a>
+  <div class="titulo">
+    <center>
+      <h1>Vinos Secos</h1>
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" fill="currentColor" class="bi bi-cup" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M.11 3.187A.5.5 0 0 1 .5 3h13a.5.5 0 0 1 .488.608l-.22.991a3.001 3.001 0 0 1-1.3 5.854l-.132.59A2.5 2.5 0 0 1 9.896 13H4.104a2.5 2.5 0 0 1-2.44-1.958L.012 3.608a.5.5 0 0 1 .098-.42Zm12.574 6.288a2 2 0 0 0 .866-3.899zM1.124 4l1.516 6.825A1.5 1.5 0 0 0 4.104 12h5.792a1.5 1.5 0 0 0 1.464-1.175L12.877 4H1.123Z"/>
+      </svg>
+    </center>
+  </div>
+  <div class="products">
+    <div class="product">
+      <center>
+        <img src="vinoseco/donn.jpg" alt="Comida vegana" style="max-width: 100%; border-radius: 8px;">
+      </center>
+      <h3>Trocken Dönnhoff</h3>
+      <p>Riesling Trocken Dönnhoff</p>
+      <p>$850.0</p>
+      <p>Notas de sabor y aromas: un vino Riesling seco, la mayoría de las veces asociamos esta uva con vinos dulces sobretodo por lo complicado de las etiquetas.</p>
+      <center>
+        <a class="boton" onclick="redirigir('Trocken Dönnhoff', 850.0)">Comprar</a>
+      </center>
+    </div>
+    <div class="product">
+      <center>
+        <img src="vinoseco/manila.jpg" alt="Comida vegana" style="max-width: 100%; border-radius: 8px;">
+      </center>
+      <h3>Nittnaus Manila</h3>
+      <p>Grüner Veltliner</p>
+      <p>$940.0</p>
+      <p>Notas de sabor y aromas: Nittnaus es sinónimo de calidad en vinos austriacos. Este grüner tiene una nariz algo salvaje con una frescura de levadura que se mezcla con notas afrutadas de manzana y chabacanos.</p>
+      <center>
+        <a class="boton" onclick="redirigir('Nittnaus Manila', 940.0)">Comprar</a>
+      </center>
+    </div>
+    <div class="product">
+      <center>
+        <img src="vinoseco/maupe.jpg" alt="Comida vegana" style="max-width: 100%; border-radius: 8px;">
+      </center>
+      <h3>Domaine de Mauperthuis</h3>
+      <p>Chablis Premier Cru</p>
+      <p>$1745.0</p>
+      <p>Notas de sabor y aromas: con un bonito color dorado, delicado, fino y mineral, el 1er Cru Montmains convence por su elegancia y complejidad.</p>
+      <center>
+        <a class="boton" onclick="redirigir('Domaine de Mauperthuis', 1745.0)">Comprar</a>
+      </center>
+    </div>
+    <div class="product">
+      <center>
+        <img src="vinoseco/niedrist.jpg" alt="Comida vegana" style="max-width: 100%; border-radius: 8px;">
+      </center>
+      <h3>Niedrist</h3>
+      <p>Weingut Ignaz Niedrist Riesling 'Berg'</p>
+      <p>$1250.0</p>
+      <p>Un vino equilibrado y frutal con una frescura marcada, este Riesling es verdaderamente un vino único en el panorama de los vinos blancos italianos. Su color amarillo pajizo claro denota su naturaleza vibrante.</p>
+      <center>
+        <a class="boton" onclick="redirigir('Niedrist', 1250.0)">Comprar</a>
+      </center>
+    </div>
+    <div class="product">
+      <center>
+        <img src="vinoseco/sancerre.jpg" alt="Comida vegana" style="max-width: 100%; border-radius: 8px;">
+      </center>
+      <h3>Sancerre Blanc</h3>
+      <p>Chavignol Domaine Paul Prieur</p>
+      <p>$1085.0</p>
+      <p>Notas de sabor y aromas: cuerpo medio, completamente seco en el paladar. Las flores y los cítricos en nariz, en boca notas de limón, minerales y frutas tropicales. El final es seco, mineral y dominado por notas cítricas y de hierbas.</p>
+      <center>
+        <a class="boton" onclick="redirigir('Sancerre Blanc', 1085.0)">Comprar</a>
+      </center>
+    </div>
+    <div class="product">
+      <center>
+        <img src="vinoseco/save.jpg" alt="Comida vegana" style="max-width: 100%; border-radius: 8px;">
+      </center>
+      <h3>Savennières</h3>
+      <p>Savennières Clos du Petit Beaupreau</p>
+      <p>$1285.0</p>
+      <p>Sutil nota ahumada proveniente del roble bien integrado. En boca es directo, concentrado y con un bonito equilibrio, delicado pero con gran estructura y refrescante mineralidad. Finura y elegancia describen mejor este vino.</p>
+      <center>
+        <a class="boton" onclick="redirigir('Savennières', 1285.0)">Comprar</a>
+      </center>
+    </div>
+  </div>
+</div>
+<footer> </footer>
+</body>
+</html>
