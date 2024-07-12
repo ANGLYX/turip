@@ -1,0 +1,42 @@
+*{
+    background-color: #9C9C9C;
+}
+.gtr{
+    display: flex;
+    padding: 150px;
+    border: 8px solid black;
+    font-size: xx-large;
+}
+.sup{
+    display: flex;
+    padding: 150px;
+    border: 8px solid black; 
+    font-size: xx-large;
+}
+.ecli{
+    display: flex;
+    padding: 150px;
+    border: 8px solid black;
+    font-size: xx-large;
+}
+.jet{
+    display: flex;
+    padding: 150px;
+    border: 8px solid black;
+    font-size: xx-large;
+}
+.rx7{
+    display: flex;
+    padding: 150px;
+    border: 8px solid black;
+    font-size: xx-large;
+}
+.evo{
+    display: flex;
+    padding: 150px;
+    border: 8px solid black;
+    font-size: xx-large;
+}
+.au{
+    color: antiquewhite;
+}
